@@ -3,7 +3,6 @@ package au.com.skynetmc.skynetproxy;
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
-import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;
 
@@ -13,8 +12,6 @@ public class PingListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(ProxyPingEvent event) {
-
-
 
         InetSocketAddress address = event.getConnection().getVirtualHost();
 
